@@ -1,0 +1,73 @@
+<div data-options="dxView : { name: 'Home', title : '' } " >
+    <div id="homeRadio" data-options="dxContent : { targetPlaceholder: 'content' } " >
+            <div data-bind="dxLoadPanel: { message: 'Cargando...', visible: loadingPlay }"></div>
+    	<div id="envivo">
+    		<p>
+    			<span id="programa">
+    				<span class="iconprog1">&#8226;</span>
+    				Tu sentimiento, tu sabor
+    				<span class="iconprog1">&#8226;</span>
+    			</span>
+    			<span class="vivospan">En <b>VIVO</b></span>
+    		</p>
+    		<img src="images/triangulito.png" id="triangulito"/>
+    	</div>
+		<div id="player">
+			<div id="player-facebook"></div>
+			<div id="player-twitter"></div>
+			<div id="player-share"></div>
+			<div id="player-sound"></div>
+			<div id="player-play"></div>			
+			<div id="player-bg"></div>
+		</div>
+		<script>
+			$( document ).ready(function() {
+				resizePlay();
+			});
+			$( window ).resize(function() {
+				resizePlay();
+			});
+			function resizePlay(){
+				var initWidth=400;
+				var initHeight=440;
+				var initScale=1;
+				var newWidth=$(window).width();
+				var newHeight=$(window).height();
+				var newScale=(newWidth*initScale)/initWidth;
+				if(newHeight > newWidth){
+					if(newHeight-newWidth < initHeight-initWidth){
+						newScale=(newHeight*initScale)/initHeight;
+					}
+				}else{
+					newScale=(newHeight*initScale)/initHeight;
+				}
+				newScale-=0.1;
+				
+				//newScale = Math.round(newScale * 10) / 10;
+				
+				$("#player").css({"-webkit-transform":"scale("+newScale+")","transform":"scale("+newScale+")","-ms-transform":"scale("+newScale+")"});
+			}
+		</script>
+		<!--  
+    	<div id="player-content">
+    		<div class="circle-content">
+    			<img src="images/player/background.png" id="playerBackground">
+    			<div id="shareContent">
+    				<img id="shareAction" src="images/player/share.png"/>
+    			</div>
+    			<img src="images/player/facebook-normal.png" id="facebookBtn"/>
+    			<img src="images/player/twitter-normal.png" id="twitterBtn"/>
+    			
+    			<img src="images/player/downvol-normal.png" id="downvol" />
+    			<img src="images/player/upvol-normal.png" id="upvol" />
+    			
+    			<img src="images/player/sound-normal.png" id="sound" />
+    			<div id="playContent">
+    				<img id="btnAction" src="images/player/play-button.png"/>
+    			</div>
+    		</div>
+    	</div>-->
+	    <div id="ads">
+	    </div>
+    </div>
+</div>

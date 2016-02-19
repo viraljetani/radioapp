@@ -1,0 +1,29 @@
+<div data-options="dxView : { name: 'Galeria',title: 'Galer&iacute;a'} " >
+    <div class="form" style="background: #fff !important;" data-options="dxContent : { targetPlaceholder: 'content' } ">
+    	<div id="contentBuscador" class="clearfix">
+    		<div id="contentSearch" style="width:100%;" class="clearfix">
+            	<div id="searchinput" data-bind="dxTextBox: { placeholder: 'Buscar...',mode: 'search'} "></div>
+            	<img id="lupa" src="images/lupa.png"/>
+    		</div>
+        </div>
+        <div class="centerContent" data-bind="dxScrollView: { }">
+            <div data-bind="dxLoadPanel: { message: 'Cargando...', visible: loadingGaleriaList }"></div>
+        	<!--
+        	<div class="contentCategoriaGaleria clearfix">
+        		<div class="contentImage">
+        			<img src="test/galeria-cat.png" />
+        		</div>
+        		<div class="contentInfo">
+        			<h3>Reportajes</h3>
+        			<p>Lo mas destacado</p>
+        		</div>
+        		<div class="arrowNextContent">
+        			<img src="images/arrow-left.png" />
+        		</div>
+        	</div>
+        	-->
+        </div>
+	    <div id="ads">
+	    </div>
+    </div>
+</div>

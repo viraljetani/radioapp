@@ -1,0 +1,853 @@
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+html[xmlns] .clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}
+*{
+	border:none;
+	border-style:none;
+	outline: 0px;
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+.slideout-layout{
+    background: #000 !important;
+}
+.dx-toolbar{
+    background: #FFF !important;
+    border-bottom-color: #FFF !important;
+    color:#000;
+}
+.dx-content{
+	background: #D8D8D8 !important;
+}
+.dx-theme-android .dx-toolbar .dx-toolbar-label{
+	color: #0AB1D6;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.dx-theme-android .dx-editbox .dx-editbox-input{
+	color: #000;
+}
+#homeRadio{
+	background : #074794 !important;
+}
+#envivo{
+	background: #FFF;
+	width: 100%;
+	height: 40px;
+	vertical-align: center;
+	color: #FFF;
+	position: relative;
+}
+#triangulito{
+	position: absolute;
+}
+#envivo p{
+	height: 40px;
+}
+#programa{
+	width: 70%;
+	text-align: center;
+	display: block;
+	padding-top: 10px;
+	height: 30px;
+	float: left;
+	color: #333788;
+	font-size: 1.0em;
+}
+.vivospan{
+	background:#0AB1D6;
+	width:30%;
+	display:block;
+	padding-top: 10px;
+	height:30px;
+	float: left;
+	text-align: center;
+}
+.iconprog1{color: #074794;font-weight: bold;}
+.iconprog2{color: #E10613;font-weight: bold;}
+.dx-theme-android .slideout-layout .layout-content {
+	top: 40px;
+}
+.dx-theme-android .dx-button.dx-state-active {
+	position: relative;
+	background: #F2F2F2;
+	z-index: 0;
+}
+.slideout-layout .layout-frame, .slideout-layout .layout-frame .layout-header, .slideout-layout .layout-frame .layout-header .dx-toolbar {
+	border-radius: 0px;
+}
+#player-content{
+	width: 80%;
+	margin: 20% auto 10%;
+	position: relative;
+}
+.circle-content{
+	width: 100%;
+	position: relative;
+}
+#playerBackground{
+	width:100%;
+	position: absolute;
+	z-index: 0;
+}
+#facebookBtn,#twitterBtn,#downvol,#upvol,#sound,#btnAction,#shareAction{position:absolute;}
+#contentBuscador{
+	width: 100%;
+	height: 50px;
+	margin-top: 4px;
+}
+#contentSearch{
+	width:70%;
+	height: 40px;	
+	padding-top: 10px;
+	background: #FFF;
+	float: left;
+	color: #858585;
+}
+#searchinput{
+	float:left;
+}
+.centerContent{
+	width: 100%;
+	height: 74%;
+}
+#diasBtn{
+	float: left;
+	background:#FFF;
+	width:28%;
+	margin-left:2%;
+	height: 36px;
+	padding-top: 14px;
+	color: #858585;
+	font-size: 18px;
+	text-align: center;
+}
+.contentPrograma{
+	width: 100%;
+	background: #FFF;
+	margin: 10px 0px;
+	background: #074794;
+}
+.contentDivLogo{
+	width: 40%;
+	float: left;
+	padding: 0 5%;
+	background: #FFF url(../images/gradient-program.png) 0 bottom repeat-x;
+}
+.contentDivLogo img{
+	width:100%;
+	margin:25px 0px;
+}
+.contentDivPrograma{
+	width:40%;
+	height: 100%;
+	padding:0px 5%;
+	float: left;
+	background: #074794;
+	color: #FFF;
+	text-align: center;
+	display:block;
+}
+.contentDivPrograma .horario{
+	font-size: 18px;
+}
+.contentDivPrograma .dias{
+	font-size: 15px;
+	display: block;
+	width: 90%;
+}
+.contentNoticiaTexto{
+	padding:0px 5%;
+}
+#downvol{
+	z-index: 100;
+}
+#upvol{
+	z-index: 100;
+}
+#sound{
+	z-index: 80;
+}
+#playContent{
+	z-index:120;
+}
+#configuracionContent h2{
+	color: #0AB1D6;
+	font-size:18px;
+	width: 90%;
+	margin:50px auto 80px;
+	text-align: center;
+}
+.contentOption{
+	width:100%;
+	height:74px;
+}
+.contentTextOption{
+	width:78%;
+	height:50px;
+	float: left;
+	background: #EBEBEB;
+	color: #333788;
+	text-align: center;
+	font-size: 22px;
+	padding-top:20px;
+}
+.contentCheckOption{
+	width: 20%;
+	height:70px;
+	margin-left: 2%;
+	float: left;
+	background: #EBEBEB;
+}
+.dx-theme-android .dx-checkbox{
+	width: 40px !important;
+	height: 40px !important;
+	margin-left:20px;
+	margin-top: 10px;
+}
+.arrowleft{
+	width:40%;
+	margin: 15px 0px 0px 25px;
+}
+.contentNoticiasList{
+	width: 100%;
+	margin-bottom:20px;
+}
+.contentNoticiasList img{
+	width: 100%;
+	margin: 0;
+}
+.contentNoticiasList h3{
+	color: #FFF;
+	font-size: 18px;
+	text-align: center;
+	background: #074794;
+	padding:10px 5px;
+	margin-top:0px;
+}
+#noticiaDescription{
+	width:90%;
+	margin: 0 auto;
+	padding:15px 0;
+}
+#noticiaDescription p{
+	color : #333788;
+	font-size: 17px;
+	text-align: justify;
+}
+.contentCategoriaGaleria{
+	width: 100%;
+	height: 115px;
+	background: url(../images/background-galeria-category.png) repeat;
+	margin:'10px 0px';
+}
+.contentCategoriaGaleria .contentImage{
+	padding-left:20px;
+	height:100%;
+	background: #074794;
+	float: left;
+}
+.contentCategoriaGaleria .arrowNextContent img{
+	width: 100%;
+}
+.contentCategoriaGaleria .contentInfo{
+	width:43%;
+	height: 100%;
+	float:left;
+	margin:0px 2%;
+}
+.contentCategoriaGaleria .contentInfo h3{
+	color: #333788;
+	font-size: 23px;
+	margin-top: 15px;
+	margin-left:10px;
+}
+.contentCategoriaGaleria .contentInfo h3:before{
+	content : "::";
+	color: #E9382E;
+}
+.contentCategoriaGaleria .contentInfo p{
+	color: #575756;
+	font-size: 13px;
+	margin-left:24px;
+}
+.contentCategoriaGaleria .arrowNextContent{
+	width:10%;
+	height:100%;
+	float:left;
+}
+.contentCategoriaGaleria .arrowNextContent img{
+	width:50%;
+	margin:20px auto 0px;
+}
+
+.contentDownload{
+	width: 100%;
+	height:112px;
+	background: url(../images/background-galeria-category.png) repeat;
+	margin:10px 0px;
+}
+.contentDownload .contentImage{
+	float: left;
+	width:45%;
+	height: 100%;
+}
+.contentDownload .contentImage .contentDownloadIcon{
+	width:38%;
+	height: 100%;
+	float:left;
+	background: #FFF;
+}
+.contentDownload .contentImage .contentDownloadIcon img{
+	width: 100%;
+	margin:25px 4px 0;
+}
+.contentDownload .contentImage .famous{
+	width:75px;
+	float:left;
+	margin-left: 4px;
+}
+.contentDownload .contentTitle{
+	width:49%;
+	padding:0px 2%;
+	height:100%;
+	float:left;
+}
+.contentDownload .contentTitle h3{
+	text-align: center;
+	color: #333788;
+	font-size:15px;
+	margin-top:40px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#triangulito{
+	bottom: -7px;
+	width: 100%;
+}
+
+#ads{
+	position:absolute;
+	bottom:-4px;
+	width:100%;
+	z-index: 800;
+}
+#ads img{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+.contentProgramDetail{
+	width:100%;
+	border-bottom: 1px solid #D8D8D8;
+}
+.contentProgramDetail .imagenDetail{
+	width: 40%;
+	float: left;
+}
+.contentProgramDetail .contentDetalles{
+	float: left;
+	width:60%;
+	display:block;
+	height:100%;
+}
+.contentMasinfo{
+	width: 100%;
+	height: 100%;
+	border-top: 1px solid #D8D8D8;
+}
+.contentProgramDetail .contentDetalles .contentRed{
+	width: 100%;
+	padding: 12px 0px;
+	height: 50%;
+	display:block;
+	clear: both;
+	float: left;
+}
+.contentProgramDetail .contentDetalles .contentRed img{
+	width: 20px;
+	float: left;
+	margin: 5px 10px;
+}
+.contentProgramDetail .contentDetalles .contentRed p{
+	display: block;
+	color: #0AB1D6;
+	float: left;
+	text-align:center;
+	font-size: 15px;
+	margin-top: 9px;
+}
+.contentProgramDetail #programa{
+	width: 100%;
+	background: #074794;
+	text-align: center;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 30px;
+	float: left;
+	color: #FFFFFF;
+	font-size: 1.2em;
+	border-top: 1px solid #D8D8D8;
+}
+.textProgram{
+	width:90%;
+	margin: 20px auto 0;
+}
+.textProgram p{
+	color: #333788;
+}
+/* Smartphones (320x480) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 321px) and (-webkit-max-device-pixel-ratio: 1.5) {
+	#playerBackground{
+		left: 1px;
+	}
+	#facebookBtn{
+		width: 69px;
+		top: 57px;
+		left: 28px;
+		border-radius: 0px;
+		z-index: 100;
+	}
+	#twitterBtn{
+		width: 69px;
+		top: 57px;
+		right: 25px;
+		border-radius: 0px;
+		z-index: 100;
+	}
+	#downvol{
+		width: 71px;
+		top: 181px;
+		left: 10px;
+		border-radius: 60px 0px 0px 60px;
+		z-index: 100;
+	}
+	#upvol{
+		width: 71px;
+		top: 180px;
+		right: 11px;
+		border-radius: 0px 60px 60px 0px;
+		z-index: 100;
+	}
+	#sound{
+		width: 143px;
+		top: 161px;
+		left: 58px;
+		z-index: 50;
+		border-radius: 0px;
+	}
+	#playContent{
+		top: 13px;
+		left: 83px;
+		width: 93px;
+		height: 93px;
+		border-radius: 53px;
+		position: relative;
+		z-index: 120;
+	}
+	#btnAction{
+		width:92px;
+		top: 0px;
+		left: 0px;
+	}
+	#shareContent{
+		top: 27px;
+		left: 58px;
+		width: 143px;
+		height: 69px;
+		position: relative;
+		z-index: 110;
+		border-radius: 0px; 
+	}
+	#shareAction{
+		width:100%;
+		top: 0;
+		left: 0;
+	}
+	#searchinput{
+		width:80%;
+	}
+	#lupa{
+		width: 30px;
+		margin-left: 6px;
+	}
+	#diasBtn{
+	}
+	.contentDivPrograma{
+		height: 110px;
+	}
+	.contentDivPrograma .horario{
+		margin-top: 30px;
+	}
+	
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 321px) and (-webkit-max-device-pixel-ratio: 1) {
+	#player-content{
+		width: 55%;
+	}
+	#facebookBtn{
+		width: 47px;
+		top: 40px;
+		left: 18px;
+		border-radius: 0px;
+		z-index: 100;
+	}
+	#twitterBtn{
+		width: 47px;
+		top: 40px;
+		right: 16px;
+		border-radius: 0px;
+		z-index: 100;
+	}
+	#downvol{
+		width: 62px;
+		top: 137px;
+		left: 4px;
+		border-radius: 60px 0px 0px 60px;
+		z-index: 100;
+	}
+	#upvol{
+		width: 62px;
+		top: 137px;
+		right: 4px;
+		border-radius: 0px 60px 60px 0px;
+		z-index: 100;
+	}
+	#sound{
+		width: 100px;
+		top: 111px;
+		left: 39px;
+		z-index: 50;
+		border-radius: 0px;
+	}
+	#playContent {
+		top: 9px;
+		left: 56px;
+		width: 66px;
+		height: 66px;
+		border-radius: 53px;
+		position: relative;
+		z-index: 120;
+	}
+	#btnAction{
+		width: 66px;
+		top: 0px;
+		left: 0px;
+	}
+	#shareContent {
+		top: 18px;
+		left: 40px;
+		width: 98px;
+		height: 48px;
+		border-radius: 53px;
+		position: relative;
+		z-index: 110;
+	}
+	#shareAction{
+		width:100%;
+	}
+	#searchinput{
+		width:80%;
+	}
+	#lupa{
+		width: 30px;
+		margin-left: 6px;
+	}
+	#diasBtn{
+	}
+	.contentDivPrograma{
+		height: 110px;
+	}
+	.contentDivPrograma .horario{
+		margin-top: 30px;
+	}
+	#noticiasScroll{
+		height: 75% !important;
+	}
+}
+@media only screen and (min-device-width : 360px) , only screen and (min-device-pixel-ratio : 2){
+	#noticiasScroll{
+		height:85%;
+	}
+	#player-content{
+		width: 80%;
+	}
+	#triangulito{
+		bottom: -7px;
+		width: 100%;
+	}
+	#facebookBtn{
+		width: 77px;
+		top: 65px;
+		left: 31px;
+		border-radius: 0px;
+		z-index: 100;
+	}
+	#twitterBtn{
+		width: 77px;
+		top: 65px;
+		right: 28px;
+		border-radius: 0px;
+		z-index: 100;
+	}
+	#downvol{
+		width: 75px;
+		top: 189px;
+		left: 9px;
+		border-radius: 60px 0px 0px 60px;
+		z-index: 100;
+	}
+	#upvol{
+		width: 75px;
+		top: 189px;
+		right: 9px;
+		border-radius: 0px 60px 60px 0px;
+		z-index: 100;
+	}
+	#sound{
+		width: 161px;
+		top: 183px;
+		left: 65px;
+		z-index: 50;
+		border-radius: 0px;
+	}
+	#playContent{
+		top: 19px;
+		left: 96px;
+		width: 100px;
+		height: 100px;
+		border-radius: 53px;
+		position: relative;
+		z-index: 120;
+	}
+	#btnAction{
+		width: 100%;
+		top: 0px;
+		left: 0px;
+	}
+	#shareContent {
+		top: 31px;
+		left: 66px;
+		width: 159px;
+		height: 77px;
+		border-radius: 0px;
+		position: relative;
+		z-index: 110;
+	}
+	#shareAction{
+		width:100%;
+		top: 0px;
+		left: 0px;
+	}
+	#searchinput{
+		width:80%;
+	}
+	#lupa{
+		width: 30px;
+		margin-left: 6px;
+	}
+	#diasBtn{
+	}
+	.contentDivPrograma{
+		height: 110px;
+	}
+	.contentDivPrograma .horario{
+		margin-top: 30px;
+	}
+}
+/*
+@media only screen and (min-device-width : 320px), only screen and (min-device-pixel-ratio : 3){
+	#player-content{
+		width: 70%;
+	}
+	#triangulito{
+		bottom: -7px;
+		width: 100%;
+	}
+	#facebookBtn{
+		width: 92px;
+		top: 4px;
+		left: 24px;
+		border-radius: 82px 0px 0px 82px;
+		z-index:100;
+		background: red;
+	}
+	#twitterBtn{
+		width: 95px;
+		top: 5px;
+		right: 23px;
+		border-radius: 0px 82px 82px 0px;
+		z-index:100;
+	}
+	#downvol{
+		width: 75px;
+		top: 189px;
+		left: 9px;
+		border-radius: 60px 0px 0px 60px;
+		z-index: 100;
+	}
+	#upvol{
+		width: 75px;
+		top: 189px;
+		right: 9px;
+		border-radius: 0px 60px 60px 0px;
+		z-index: 100;
+	}
+	#sound{
+		width: 150px;
+		top:296px;
+		left: 42px;
+		z-index: 50;
+		border-radius: 0px 0px 55px 55px;
+	}
+	#playContent{
+		top:105px;
+		left: 64px;
+		width: 106px;
+		height: 106px;
+		border-radius: 53px;
+		position: relative;
+		z-index:90;
+	}
+	#btnAction{
+		width:85px;
+		top: 10px;
+		left: 10px;
+	}
+	#shareContent{
+		top:46px;
+		left: 64px;
+		width: 106px;
+		height: 106px;
+		border-radius: 53px;
+		position: relative;
+		z-index:110;
+	}
+	#shareAction{
+		width:80px;
+		top: 13px;
+		left: 13px;
+	}
+	#searchinput{
+		width:80%;
+	}
+	#lupa{
+		width: 30px;
+		margin-left: 6px;
+	}
+	#diasBtn{
+	}
+	.contentDivPrograma{
+		height: 110px;
+	}
+	.contentDivPrograma .horario{
+		margin-top: 30px;
+	}
+}
+*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 769px){
+	#player-content{
+		width: 60%;
+	}
+	#facebookBtn{
+		width: 90px;
+		top: 4px;
+		left: 24px;
+		border-radius: 82px 0px 0px 82px;
+		z-index:100;
+	}
+	#twitterBtn{
+		width: 93px;
+		top: 5px;
+		right: 24px;
+		border-radius: 0px 82px 82px 0px;
+		z-index:100;
+	}
+	#downvol{
+		width: 62px;
+		top: 137px;
+		left: 4px;
+		border-radius: 60px 0px 0px 60px;
+		z-index: 100;
+		display : none;
+	}
+	#upvol{
+		width: 62px;
+		top: 137px;
+		right: 4px;
+		border-radius: 0px 60px 60px 0px;
+		z-index: 100;
+		display : none;
+	}
+	#sound{
+		width: 105px;
+		top:226px;
+		left: 35px;
+		z-index: 50;
+		border-radius: 0px 0px 45px 45px;
+		display : none;
+	}
+	#playContent{
+		top:79px;
+		left: 48px;
+		width: 80px;
+		height: 80px;
+		border-radius: 53px;
+		position: relative;
+		z-index:120;
+		display : none;
+	}
+	#btnAction{
+		width:68px;
+		top: 7px;
+		left: 7px;
+	}
+	#shareContent{
+		top:42px;
+		left: 65px;
+		width: 100px;
+		height: 100px;
+		border-radius: 53px;
+		position: relative;
+		z-index:110;
+		background: red;
+	}
+	#shareAction{
+		width:55px;
+		top: 13px;
+		left: 13px;
+	}
+	#searchinput{
+		width:80%;
+	}
+	#lupa{
+		width: 30px;
+		margin-left: 6px;
+	}
+	#diasBtn{
+	}
+	.contentDivPrograma{
+		height: 110px;
+	}
+	.contentDivPrograma .horario{
+		margin-top: 30px;
+	}
+	#noticiasScroll{
+		height: 75% !important;
+	}
+}

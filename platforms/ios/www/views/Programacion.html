@@ -1,0 +1,41 @@
+<div data-options="dxView : { name: 'Programacion',title: 'Programaci&oacute;n'} " >
+    <div class="form" style="background: #fff !important;" data-options="dxContent : { targetPlaceholder: 'content' } ">
+    	<div id="contentBuscador" class="clearfix">
+    		<div id="contentSearch" class="clearfix">
+            	<div id="searchinput" data-bind="dxTextBox: { placeholder: 'Buscar...',mode: 'search'} "></div>
+            	<img id="lupa" src="images/lupa.png"/>
+    		</div>
+    		 <div id="diasBtn">D&Iacute;AS</div>
+        </div>
+        <div class="centerContent" id="contenedorNoticiasGeneral" style="height:75%;" data-bind="dxScrollView: { }">
+            <div data-bind="dxLoadPanel: { message: 'Cargando...', visible: loadPanelVisible }"></div><div id="overlayContainer" data-bind="dxOverlay: { visible: overlayVisible }">
+                <div class="overlayContents">
+                    <select id="diaProg" style="width:100%;margin-top:50px;">
+                        <option value="Domingo">Domingo</option>
+                        <option value="Lunes">Lunes</option>
+                        <option value="Martes">Martes</option>
+                        <option value="Miercoles">Miercoles</option>
+                        <option value="Jueves">Jueves</option>
+                        <option value="Viernes">Viernes</option>
+                        <option value="Sabado">Sabado</option>
+                    </select>
+                    <div class="button" data-bind="dxButton: { text: 'Aceptar', clickAction: function(){ overlayVisible(false); dia = $('#diaProg').val();
+} }"></div>
+                </div>
+            </div>
+        	<!--  
+        	<div class="contentPrograma clearfix">
+        		<div class="contentDivLogo clearfix">
+        			<img src="test/logo1.jpg"/>
+        		</div>
+        		<div class="contentDivPrograma">
+        			<p class="horario">12AM a 5PM</p>
+        			<p class="dias">S&aacute;bados</p>
+        		</div>
+        	</div>
+        	-->
+        </div>
+	    <div id="ads">
+	    </div>
+    </div>
+</div>

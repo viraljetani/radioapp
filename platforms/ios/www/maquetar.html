@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Radio Antena 8</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/fix.css">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div id="player">
+		<div id="player-facebook"></div>
+		<div id="player-twitter"></div>
+		<div id="player-share"></div>
+		<div id="player-sound"></div>
+		<div id="player-play"></div>			
+		<div id="player-bg"></div>
+	</div>
+	<script>
+		$( document ).ready(function() {
+			resizePlay();
+		});
+		$( window ).resize(function() {
+			resizePlay();
+		});
+		function resizePlay(){
+			var initWidth=400;
+			var initHeight=440;
+			var initScale=1;
+			var newWidth=$(window).width();
+			var newHeight=$(window).height();
+			var newScale=(newWidth*initScale)/initWidth;
+			if(newHeight > newWidth){
+				if(newHeight-newWidth < initHeight-initWidth){
+					newScale=(newHeight*initScale)/initHeight;
+				}
+			}else{
+				newScale=(newHeight*initScale)/initHeight;
+			}
+			newScale-=0.1;
+			newScale = Math.round(newScale * 10) / 10;
+			$("#player").css({"-webkit-transform":"scale("+newScale+")","transform":"scale("+newScale+")","-ms-transform":"scale("+newScale+")"});
+		}
+	</script>
+</div>
+
+	
+</body>
+</html>
+

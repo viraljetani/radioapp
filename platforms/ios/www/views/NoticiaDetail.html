@@ -1,0 +1,39 @@
+<div data-options="dxView : { name: 'NoticiaDetail', title: 'Navigation', layout: 'empty'} " >
+    <div class="navigation" data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div data-bind="dxToolbar: { items: [
+	              {
+	                  align: 'left',
+	                  widget: 'button',
+	                  options: {
+	                  	  type: 'back',
+                      		text: 'Back',
+	                      clickAction: function(e) {
+	                          KitchenSink.app.navigate('Noticias', { root: true });
+	                      }
+	                  }
+	              },
+	              {
+	                  align: 'right',
+	                  widget: 'button',
+	                  options: {
+	                      icon: 'share',
+	                      clickAction: function(e) {
+	                      		 window.MainActivity.compartir(link);
+	                      }
+	                  }
+	              },
+	              {
+	                  align: 'center',
+	                  text: 'Noticias'
+	              }
+	            ] 
+        }"></div>
+        <div style="height:100%;">
+        	<div class="centerContent" id="noticiasScroll" data-bind="dxScrollView: { }">
+                <div data-bind="dxLoadPanel: { message: 'Cargando...', visible: loadingNoticiaDetail }"></div>
+	    	</div>
+		    <div id="ads">
+		    </div>
+        </div>
+    </div>
+</div>

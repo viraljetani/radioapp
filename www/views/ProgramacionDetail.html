@@ -1,0 +1,58 @@
+<div data-options="dxView : { name: 'ProgramacionDetail', title: 'Navigation', layout: 'empty'} " >
+    <div class="navigation" style="background: #fff !important;" data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div data-bind="dxToolbar: { items: [
+	              {
+	                  align: 'left',
+	                  widget: 'button',
+	                  options: {
+	                  	  type: 'back',
+                      		text: 'Back',
+	                      clickAction: function(e) {
+	                          KitchenSink.app.navigate('Programacion', { root: true });
+	                      }
+	                  }
+	              },
+	              {
+	                  align: 'center',
+	                  text: 'Programaci&oacute;n'
+	              }
+	            ] 
+        }"></div>
+        <div style="height:100%;">
+        	<div class="centerContent" id="noticiasScroll" data-bind="dxScrollView: { }">
+                <!-- <div data-bind="dxLoadPanel: { message: 'Cargando...', visible: loadingDetailProgramacion }"></div>-->
+	   			<!-- 
+	   			<div class="contentProgramDetail clearfix">
+	   				<p>
+		    			<span id="programa">
+		    				<span class="iconprog1">:</span>
+		    				<span class="iconprog2">:</span>
+		    				American Top 40
+		    				<span class="iconprog1">:</span>
+		    				<span class="iconprog2">:</span>
+		    			</span>
+		    		</p>
+		    		<div class="contentMasinfo clearfix">
+		   				<img src="test/testprogramdetail.png" class="imagenDetail" />
+		   				<div class="contentDetalles clearfix" >
+		   					<div class="contentRed clearfix" style="border-bottom: 1px solid #D8D8D8;">
+		   						<img src="images/facebook-red.png" />
+		   						<p>/ryanseacrest</p>
+		   					</div>
+		   					<div class="contentRed clearfix">
+		   						<img src="images/twitter-red.png" />
+		   						<p style="margin-top: 8px;">@ryanseacrest</p>
+		   					</div>
+		   				</div>
+		    		</div>
+	   			</div>
+	   			<div class="textProgram">
+	   				<p>&#191;Qu&#233; es lo mejor de Antena 8?: "Su personal, lo bien que nos llevamos todos y el profesionalismo de cada uno, es el &#233;xito de la emisora buen trabajo en equipo."</p>
+	   			</div>
+	   			-->
+	    	</div>
+		    <div id="ads">
+		    </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Radio Antena 8</title>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.common.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.ios.default.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.android.holo-dark.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.win8.black.small.css" />
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <link rel="stylesheet" type="text/css" href="layouts/SlideOut/SlideOutLayout.css" />
+    <link rel="dx-template" type="text/html" href="layouts/SlideOut/SlideOutLayout.html" />
+    <link rel="stylesheet" type="text/css" href="layouts/Empty/EmptyLayout.css" />
+    <link rel="dx-template" type="text/html" href="layouts/Empty/EmptyLayout.html" />
+    <!-- APP VIEWS -->
+	<link rel="dx-template" type="text/html" href="views/Home.html"/>
+    <link rel="dx-template" type="text/html" href="views/Programacion.html"/>
+    <link rel="dx-template" type="text/html" href="views/Configuracion.html"/>
+    <link rel="dx-template" type="text/html" href="views/Alertas.html"/>
+    <link rel="dx-template" type="text/html" href="views/Noticias.html"/>
+    <link rel="dx-template" type="text/html" href="views/Galeria.html"/>
+    <link rel="dx-template" type="text/html" href="views/NoticiaDetail.html"/>
+    <link rel="dx-template" type="text/html" href="views/GaleriaList.html"/>
+    <link rel="dx-template" type="text/html" href="views/ProgramacionDetail.html"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icons.css">
+	<link rel="stylesheet" href="css/fix.css">
+    <script type="text/javascript">
+    	mute = false;
+    	playing = false;
+    	noticiasPush = false;
+    	contenidosPush = false;
+    	programaPush = false;
+    	radioNumber = 4;
+    	bannerSito = function(){};
+    </script>
+</head>
+<body>
+    <div class="dx-viewport"></div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/knockout-2.2.1.js"></script>
+    <script type="text/javascript" src="js/globalize.min.js"></script>
+    <script type="text/javascript" src="js/dx.phonejs.js"></script>
+    <script type="text/javascript" src="app.config.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="data/db.js"></script>
+    <script type="text/javascript" src="layouts/SlideOut/SlideOutLayout.js"></script>
+    <script type="text/javascript" src="layouts/Empty/EmptyLayout.js"></script>
+    <script type="text/javascript" src="views/Home.js"></script>
+    <script type="text/javascript" src="views/Programacion.js"></script>
+    <script type="text/javascript" src="views/ProgramacionDetail.js"></script>
+    <script type="text/javascript" src="views/Configuracion.js"></script>
+    <script type="text/javascript" src="views/Alertas.js"></script>
+    <script type="text/javascript" src="views/Noticias.js"></script>
+    <script type="text/javascript" src="views/Galeria.js"></script>
+    <script type="text/javascript" src="views/NoticiaDetail.js"></script>
+    <script type="text/javascript" src="views/GaleriaList.js"></script>
+    <link rel="dx-template" type="text/html" href="views/ProgramacionDetail.js"/>
+    <script type="text/javascript">
+        $(function() {
+            KitchenSink.app.navigate();
+        });
+
+        function noticiasClick(){
+			if(window.MainActivity.isCheckCategory("NOTICIAS")==1){
+                 window.MainActivity.Unsuscribe("NOTICIAS");
+                 window.MainActivity.UpdateCategory("NOTICIAS",0);
+            }else{
+                window.MainActivity.Suscribe("NOTICIAS");
+                window.MainActivity.UpdateCategory("NOTICIAS",1);
+            }
+		}
+		function contenidosClick(){
+			if(window.MainActivity.isCheckCategory("CONTENIDOS")==1){
+                 window.MainActivity.Unsuscribe("CONTENIDOS");
+                 window.MainActivity.UpdateCategory("CONTENIDOS",0);
+            }else{
+                window.MainActivity.Suscribe("CONTENIDOS");
+                window.MainActivity.UpdateCategory("CONTENIDOS",1);
+            }
+		}
+        
+    </script>
+</body>
+</html>
+

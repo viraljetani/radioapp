@@ -1,0 +1,58 @@
+<div data-options="dxView : { name: 'GaleriaList',layout : 'empty'} " >
+    <div style="background: #fff !important;" class="navigation" data-options="dxContent : { targetPlaceholder: 'content' } " >
+    	<div data-bind="dxToolbar: { items: [
+	              {
+	                  align: 'left',
+	                  widget: 'button',
+	                  options: {
+	                  	  type: 'back',
+                      		text: 'Back',
+	                      clickAction: function(e) {
+	                          KitchenSink.app.navigate('Galeria');
+	                      }
+	                  }
+	              },
+	              {
+	                  align: 'center',
+	                  text: 'Galer&iacute;a'
+	              }
+	            ] 
+        }"></div>
+    	<div id="contentBuscador" class="clearfix">
+    		<div id="contentSearch" style="width:100%;" class="clearfix">
+            	<div id="searchinput" data-bind="dxTextBox: { placeholder: 'Buscar...',mode: 'search'} "></div>
+            	<img id="lupa" src="images/lupa.png"/>
+    		</div>
+        </div>
+        <div class="centerContent" style="height:68%;" data-bind="dxScrollView: { }">
+            <div data-bind="dxLoadPanel: { message: 'Cargando...', visible: loadingGaleriaDetail }"></div>
+        	<!--  
+        	<div class="contentCategoriaGaleria clearfix">
+        		<div class="contentImage">
+        			<img src="test/galeria-cat.png" />
+        		</div>
+        		<div class="contentInfo">
+        			<h3>Reportajes</h3>
+        			<p>Lo mas destacado</p>
+        		</div>
+        		<div class="arrowNextContent">
+        			<img src="images/arrow-down.png" />
+        		</div>
+        	</div>
+        	<div class="contentDownload clearfix">
+        		<div class="contentImage">
+        			<div class="contentDownloadIcon">
+        				<img src="images/download-normal.png"/>
+        			</div>
+        			<img class="famous" src="test/katy.png"/>
+        		</div>
+        		<div class="contentTitle">
+        			<h3>REPORTAJE A ADELE</h3>
+        		</div>
+        	</div>
+        	-->
+        </div>
+	    <div id="ads">
+	    </div>
+    </div>
+</div>
